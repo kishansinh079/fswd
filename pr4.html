@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pricing Table</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="max-w-5xl mx-auto p-6">
+        <h1 class="text-2xl font-bold text-center mb-6">
+            Pricing Plans
+        </h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+            <!-- Basic -->
+            <div class="bg-white p-4 rounded shadow text-center">
+                <h2 class="text-lg font-semibold">Basic</h2>
+                <p class="text-2xl font-bold my-2">$10</p>
+                <ul class="text-sm text-gray-600 mb-4">
+                    <li>5 Projects</li>
+                    <li>Email Support</li>
+                    <li>10 GB Storage</li>
+                </ul>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">
+                    Choose
+                </button>
+            </div>
+
+            <!-- Premium (Popular) -->
+            <div class="bg-blue-500 text-white p-4 rounded shadow text-center">
+                <h2 class="text-lg font-semibold">Premium</h2>
+                <p class="text-2xl font-bold my-2">$30</p>
+                <ul class="text-sm mb-4">
+                    <li>Unlimited Projects</li>
+                    <li>Priority Support</li>
+                    <li>100 GB Storage</li>
+                </ul>
+                <button class="bg-white text-blue-500 px-4 py-2 rounded">
+                    Choose
+                </button>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="bg-white p-4 rounded shadow text-center">
+                <h2 class="text-lg font-semibold">Enterprise</h2>
+                <p class="text-2xl font-bold my-2">$90</p>
+                <ul class="text-sm text-gray-600 mb-4">
+                    <li>Unlimited Projects</li>
+                    <li>24/7 Support</li>
+                    <li>1 TB Storage</li>
+                </ul>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">
+                    Contact
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

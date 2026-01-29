@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <form class="bg-white p-6 rounded shadow w-80" onsubmit="return check()">
+        <h2 class="text-xl font-bold text-center mb-4">Register</h2>
+
+        <input type="text" required placeholder="Username" class="w-full mb-3 p-2 border rounded">
+
+        <input type="email" required placeholder="Email" class="w-full mb-3 p-2 border rounded">
+
+        <input type="password" id="pass" required minlength="8" placeholder="Password"
+            class="w-full mb-3 p-2 border rounded">
+
+        <input type="password" id="cpass" required placeholder="Confirm Password"
+            class="w-full mb-3 p-2 border rounded">
+
+        <p id="err" class="text-red-500 text-sm mb-2 hidden"></p>
+
+        <button class="w-full bg-blue-600 text-white py-2 rounded">
+            Register
+        </button>
+    </form>
+
+    <script>
+        function check() {
+            const p = pass.value, c = cpass.value;
+            const re = /^(?=.*[A-Za-z])(?=.*\d).{8,}$/;
+
+            if (!re.test(p)) {
+                err.textContent = "Password must have letters & numbers";
+                err.classList.remove("hidden");
+                return false;
+            }
+            if (p !== c) {
+                err.textContent = "Passwords do not match";
+                err.classList.remove("hidden");
+                return false;
+            }
+            alert("Registration Successful!");
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>
