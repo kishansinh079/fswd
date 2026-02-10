@@ -1,5 +1,5 @@
 
-// PR 7: Simple Counter Application in React
+// PR-7: Simple Counter Application in React
 
 import React, { useState } from "react";
 
